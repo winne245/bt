@@ -99,14 +99,21 @@
                 <img src="avatar.png" alt="Avatar" class="avatar">
             </div>
             <label for="uname"><b>lbUserName</b></label>
-            <input type="text" placeholder="txtUserName" name="uname" required>
+            <input id = "username" type="text" placeholder="txtUserName" name="uname" required>
 
             <label for="psw"><b>lbPassword</b></label>
-            <input type="password" placeholder="txtPassword" name="psw" required>
+            <input id = "password" type="password" placeholder="txtPassword" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button onclick="onSubmit()">Login</button>
         </div>
     </form>
 </body>
+<script>
+    function onSubmit() {
+        if(document.getElementById("username").value == "admin" && document.getElementById("password").value == "admin")
+        alert ("Đăng nhập thành công");
+        else alert("Đăng nhập thất bại");
+    }
+</script>
 
 </html>
