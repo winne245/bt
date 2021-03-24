@@ -95,26 +95,11 @@
 <body>
     <div class="form">
         <div class="container">
-            <div class="imgcontainer">
-                <img src="avatar.png" alt="Avatar" class="avatar">
-            </div>
-            <label for="uname"><b>lbUserName</b></label>
-            <input id="username" type="text" placeholder="txtUserName" name="uname" required>
-
-            <label for="psw"><b>lbPassword</b></label>
-            <input id="password" type="password" placeholder="txtPassword" name="psw" required>
-
-            <button onclick="onSubmit()">Login</button>
+            <h1>HOME PAGE</h1>
+            <br />
+            Đăng nhập thành công
         </div>
     </div>
 </body>
-<script>
-    function onSubmit() {
-        if (document.getElementById("username").value == "admin" && document.getElementById("password").value == "admin") {
-            alert("Đăng nhập thành công");
-            window.location.href = 'http://127.0.0.1:5500/homepage.html';
-        } else alert("Đăng nhập thất bại");
-    }
-</script>
 
 </html>
